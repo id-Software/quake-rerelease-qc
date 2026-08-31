@@ -1,0 +1,96 @@
+#output "../progs.dat"
+
+#copyright "Machinegames 2026"
+
+// Enables downed zombies to be gibbed by nearby explosions
+// #define GIB_DOWNED_ZOMBIES
+
+// Enables grenade downward slope bounce fix
+#define GRENADE_BOUNCE_FIX
+
+// Enables monsters being aware of being in dangerous liquids
+#define MONSTERS_AWARE_OF_CONTENTS
+
+// Enables experimental coop respawn behaviour: items respawn <num_players> times so all players have a chance to pick them up
+#define COOP_RESPAWN_ITEMS_FOR_PLAYERS
+
+// Enables experimental coop respawn behaviour: keep all the players weapons when a checkpoint is activated
+#define COOP_RESPAWN_KEEP_WEAPONS
+
+// Makes it so that killing an entity that has a delayed trigger behaviour while the delay is pending also cancels the delayed trigger
+#define ALLOW_DELAYED_THINK_CANCEL
+
+#includelist
+
+defs.qc
+math.qc
+subs.qc
+frametick.qc
+fight.qc
+ai.qc
+combat.qc
+items.qc
+items_runes.qc
+weapons.qc
+fog.qc // Fog controls
+world.qc
+client.qc
+player.qc
+monsters.qc
+doors.qc
+buttons.qc
+triggers.qc
+plats.qc
+misc.qc
+func_bob.qc
+lights.qc
+rotate.qc
+func_toss.qc
+// func_fade.qc // Bad behavior
+
+
+monsters/ogre.qc
+monsters/demon.qc
+monsters/shambler.qc
+monsters/knight.qc
+monsters/soldier.qc
+monsters/wizard.qc
+monsters/dog.qc
+monsters/zombie.qc
+monsters/boss.qc
+
+monsters/tarbaby.qc		// registered
+monsters/hknight.qc		// registered
+monsters/fish.qc		// registered
+monsters/shalrath.qc	// registered
+monsters/enforcer.qc	// registered
+monsters/oldone.qc		// registered
+
+misc_corpses.qc //Corpses yay
+misc_fx.qc // adds screenshake
+misc_model.qc //generic static and animated model
+misc_rope.qc // A rope!?
+
+// MG3 specific
+mg3_triggers.qc
+mg3_sacrifice_triggers.qc // used in map8 for counting how many sacrifices there are 
+monsters/mg3_demodog.qc
+monsters/mg3_infected_generic.qc
+monsters/mg3_soldier_infected.qc
+monsters/mg3_enforcer_infected.qc
+monsters/mg3_knight_infected.qc
+monsters/mg3_hknight_infected.qc
+monsters/mg3_super_shambler.qc
+monsters/mg3_sacrifice.qc
+monsters/mg3_player_ghost.qc
+monsters/mg3_lavaman.qc
+monsters/boss_final.qc
+monsters/mg3_orb.qc
+monsters/mg3_rknight.qc
+monsters/mg3_oldone_new.qc
+monsters/mg3_shub_zombie.qc
+mg3_items.qc
+mg3_upgrades.qc
+mg3_weapons.qc
+
+#endlist
